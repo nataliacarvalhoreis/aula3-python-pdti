@@ -29,4 +29,16 @@ while salario<=0:
         print("Informe um salário maior que 0!")
 
 # Validação do sexo
+sexo = ""
+while sexo.upper() != "M" and sexo.upper() != "F":
+    sexo = input("Informe o seu sexo:")
+    if sexo.upper() != "M" and sexo.upper() != "F":
+        print("O sexo deve ser M ou F")
 
+#Validação do estado civil
+estado_civil = "a"
+
+while "SCVD".find(estado_civil.upper()) == -1:
+    estado_civil = input("Informe o seu estado civil: ")
+    if "SCVD".find(estado_civil.upper()) == -1:
+        print("O estado civil precisa ser: (S)Solteiro, (C)Casado, (V)Viúvo ou (D)Divorciado!")
